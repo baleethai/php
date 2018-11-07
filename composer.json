@@ -1,6 +1,7 @@
 {
     "require": {
-        "nesbot/carbon": "^2.3"
+        "nesbot/carbon": "^2.3",
+        "dvdoug/boxpacker": "^3.1"
     },
     "require-dev": {
         "kint-php/kint": "^3.0"
