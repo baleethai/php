@@ -9,9 +9,9 @@ function compare_price($a, $b)
 
 // result : cost, description boxes
 $boxes = [
-	['title' => '3kg', 'price' => '100', 'weight' => '3'],
-	['title' => '10kg', 'price' => '200', 'weight' => '10'],
 	['title' => '20kg', 'price' => '300', 'weight' => '20'],
+    ['title' => '10kg', 'price' => '200', 'weight' => '10'],
+    ['title' => '3kg', 'price' => '100', 'weight' => '3'],
 ];
 
 $weight = isset($_GET['weight']) ? $_GET['weight'] : 0; // kg.
@@ -21,9 +21,10 @@ foreach ($boxes as $box) {
     $countBox = ceil($weight / $box['weight']);
     $useBoxes[] = [
         'title' => $box['title'],
-        'box' => $countBox,
+        'box'   => $countBox,
         'price' => $box['price'] * $countBox
     ];
 }
+s($useBoxes);
 usort($useBoxes, 'compare_price');
 s(array_shift($useBoxes));
