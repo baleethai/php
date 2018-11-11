@@ -6,12 +6,7 @@ function compare_price($a, $b)
 {
     return strnatcmp($a['price'], $b['price']);
 }
-function compare_box($a, $b)
-{
-    return strnatcmp($a['sort'], $b['sort']);
-}
 
-// result : cost, description boxes
 $boxes = [
 	['title' => '3kg', 'price' => '100', 'weight' => '3'],
     ['title' => '10kg', 'price' => '200', 'weight' => '10'],
@@ -31,5 +26,5 @@ foreach ($boxes as $key => $box) {
     ];
 }
 usort($useBoxes, 'compare_price');
-usort($useBoxes, 'compare_box');
-s($useBoxes);
+
+print_r($useBoxes);
