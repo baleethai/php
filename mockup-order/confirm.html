@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ใบสั่งซื้อ</title>
+    <title>ยืนยันใบสั่งซื้อ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -36,19 +36,19 @@
                         </div>
                         <div class="item">
                             <span class="donate">
-                                <input type="checkbox" class="form-check-input" id="is_print" value="1">
+                                <input type="checkbox" class="form-check-input" id="is_print" value="1" disabled="true">
                             </span>
                             <p class="item-name">ต้องการพิมพ์รายชื่อหรือไม่</p>
                             <p class="item-description">รายชื่อผู้ร่วมบริจาคพิมพ์หนังสือ</p>
                         </div>
                         <div class="item">
-                            <span class="price" id="total">฿28</span>
+                            <span class="price" id="total">฿23,992.00</span>
                             <p class="item-name">รวมเป็นเงิน</p>
                         </div>
                         <div class="total">
                             <span class="item-name">จำนวน</span>
                             <span class="qty">
-                                <input type="text" name="qty" id="qty" class="form-control" value="1">
+                                <span class="price" id="qty">300</span>
                             </span>
                         </div>
                     </div>
@@ -57,61 +57,61 @@
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <label for="card-number">ชื่อ-นามสกุล</label>
-                                <input type="text" class="form-control" placeholder="ชื่อ-นามสกุล">
+                                <input type="text" class="form-control" placeholder="ชื่อ-นามสกุล" value="น.ส. สุนันทา ประเสริฐสิริกุล">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="cvc">ไลน์ไอดี</label>
-                                <input type="text" class="form-control" placeholder="ไลน์ไอดี">
+                                <input type="text" class="form-control" placeholder="ไลน์ไอดี" value="xdds221">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="card-holder">อีเมล์</label>
-                                <input id="card-holder" type="text" class="form-control" placeholder="อีเมล์">
+                                <input id="card-holder" type="text" class="form-control" placeholder="อีเมล์" value="susln2311@gmail.com">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="">โทรศัพท์</label>
-                                <input type="text" class="form-control" placeholder="โทรศัพท์">
+                                <input type="text" class="form-control" placeholder="โทรศัพท์" value="0898988812">
                             </div>
                         </div>
                         <h3 class="title">ที่อยู่ที่จัดส่ง</h3>
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <label for="card-number">ชื่อ-นามสกุล</label>
-                                <input id="card-number" type="text" class="form-control" placeholder="ชื่อ-นามสกุล">
+                                <input id="card-number" type="text" class="form-control" placeholder="ชื่อ-นามสกุล" value="น.ส. สุนันทา ประเสริฐสิริกุล">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="cvc">ไลน์ไอดี</label>
-                                <input id="cvc" type="text" class="form-control" placeholder="ไลน์ไอดี">
+                                <input id="cvc" type="text" class="form-control" placeholder="ไลน์ไอดี" value="xdds221">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="card-holder">อีเมล์</label>
-                                <input id="card-holder" type="text" class="form-control" placeholder="อีเมล์">
+                                <input id="card-holder" type="text" class="form-control" placeholder="อีเมล์" value="susln2311@gmail.com">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="">โทรศัพท์</label>
-                                <input id="card-holder" type="text" class="form-control" placeholder="โทรศัพท์">
+                                <input id="card-holder" type="text" class="form-control" placeholder="โทรศัพท์" value="0898988812">
                             </div>
                             <div class="form-group col-sm-12">
                                 <label for="card-number">ที่อยู่</label>
-                                <textarea id="card-number" type="text" class="form-control" placeholder="ที่อยู่"></textarea>
+                                <textarea id="card-number" type="text" class="form-control" placeholder="ที่อยู่">180/472 ราษบูรณะ ราษบูรณะ กรุงเทพมหานคร 10100</textarea>
                             </div>
                             <div class="form-group col-sm-12">
-                                <input type="checkbox" class="form-check-input" id="isInvoice" checked="checked">
+                                <input type="checkbox" class="form-check-input">
                                 <label class="form-check-label" for="exampleCheck1">ส่งใบเสร็จไปที่อยู่นี้</label>
                             </div>
                         </div>
-                        <h3 class="title invoice">ที่อยู่รับใบเสร็จ</h3>
-                        <div class="row invoice">
+                        <h3 class="title">ที่อยู่รับใบเสร็จ</h3>
+                        <div class="row">
                             <div class="form-group col-sm-6">
                                 <label for="card-number">ชื่อ-นามสกุล</label>
-                                <input id="card-number" type="text" class="form-control" placeholder="ชื่อ-นามสกุล">
+                                <input id="card-number" type="text" class="form-control" placeholder="ชื่อ-นามสกุล" value="นาย ทินกร ปัดถา">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="">โทรศัพท์</label>
-                                <input id="card-holder" type="text" class="form-control" placeholder="โทรศัพท์">
+                                <input id="card-holder" type="text" class="form-control" placeholder="โทรศัพท์" value="0819283123">
                             </div>
                             <div class="form-group col-sm-12">
                                 <label for="card-number">ที่อยู่</label>
-                                <textarea id="card-number" type="text" class="form-control" placeholder="ที่อยู่"></textarea>
+                                <textarea id="card-number" type="text" class="form-control" placeholder="ที่อยู่">180/472 ราษบูรณะ ราษบูรณะ กรุงเทพมหานคร 10100</textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -119,7 +119,7 @@
                                 <button type="button" class="btn btn-warning btn-block btn-back">กลับ</button>
                             </div>
                             <div class="form-group col-sm-8">
-                                <button type="button" class="btn btn-primary btn-block">ขั้นตอนต่อไป</button>
+                                <button type="button" class="btn btn-primary btn-block">ยืนยันใบสั่งซื้อ</button>
                             </div>
                         </div>
                     </div>
@@ -134,21 +134,10 @@
 <script src="js/script.js"></script>
 <script type="text/javascript">
     $(function() {
-
-        if ($.cookie('invoice') == 0) {
-            $(".invoice").fadeOut(400);
-        } else {
-            $(".invoice").fadeIn(400);
-        }
-
-        $('input#isInvoice').click(function() {
-            if( $(this).is(':checked')) {
-                $.cookie('invoice', 1);
-                $(".invoice").fadeOut(400);
-            } else {
-                $.cookie('invoice', 0);
-                $(".invoice").fadeIn(400);
-            }
+        $("input").attr('disabled', true);
+        $("textarea").attr('disabled', true);
+        $(".btn-primary").click(function() {
+            window.location.href = 'success.html';
         });
     });
 </script>

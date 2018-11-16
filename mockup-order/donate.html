@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Donate</title>
+    <title>รายนามผู้รวมบริจาค</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -22,36 +22,36 @@
                 <form>
                     <div class="card-details">
                         <h3 class="title">รายชื่อผู้ร่วมบริจาค</h3>
-                        <div class="row donate">
+                        <div class="row donate" id="donate1">
                             <div class="form-group col-sm-8">
                                 <label for="card-number">ชื่อ-นามสกุล</label>
-                                <input id="card-number" type="text" class="form-control" placeholder="ชื่อ-นามสกุล" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="ชื่อ-นามสกุล">
                             </div>
                             <div class="form-group col-sm-3">
                                 <label for="cvc">จำนวนเล่ม</label>
-                                <input id="cvc" type="text" class="form-control" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control">
                             </div>
                             <div class="form-group col-sm-1">
-                                <a href="#" id="add-donate"><img src="../images/30-512.png" width="20" style="margin-top: 45px;"></a>
+                                <a href="#" class="add-donate"><img src="../images/30-512.png" width="20" style="margin-top: 45px;"></a>
                             </div>
                         </div>
-                        <div class="row donate">
+<!--                         <div class="row donate" id="donate2">
                             <div class="form-group col-sm-8">                                
-                                <input id="card-number" type="text" class="form-control" placeholder="ชื่อ-นามสกุล" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="ชื่อ-นามสกุล">
                             </div>
                             <div class="form-group col-sm-3">
-                                <input id="cvc" type="text" class="form-control" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control">
                             </div>
                             <div class="form-group col-sm-1">
-                                <a href="#" id="remove-donate"><img src="../images/remove.png" width="20" style="margin-top: 5px;"></a>
+                                <a href="#" class="remove" id="d2"><img src="../images/remove.png" width="20" style="margin-top: 5px;"></a>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="row">
                             <div class="form-group col-sm-4">
-                                <button type="button" class="btn btn-warning btn-block">Back</button>
+                                <button type="button" class="btn btn-warning btn-block">ย้อนกลับ</button>
                             </div>
                             <div class="form-group col-sm-8">
-                                <button type="button" class="btn btn-primary btn-block">Proceed</button>
+                                <button type="button" class="btn btn-primary btn-block">ขั้นตอนต่อไป</button>
                             </div>
                         </div>
                     </div>
@@ -62,14 +62,33 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script>
+<script src="js/script.js"></script>
 <script type="text/javascript">
     $(function() {
-        var html = '<div class="form-group col-sm-8"><input id="card-number" type="text" class="form-control" placeholder="ชื่อ-นามสกุล" aria-label="Card Holder" aria-describedby="basic-addon1"></div><div class="form-group col-sm-3"><input id="cvc" type="text" class="form-control" aria-label="Card Holder" aria-describedby="basic-addon1"></div><div class="form-group col-sm-1"><a href="#"><img src="../images/remove.png" width="20" style="margin-top: 5px;"></a></div>';
-        $('#add-donate').click(function(event) {
-            $('.donate').last().append(html);    
+        
+        $('.add-donate').click(function(event) {
+            var total_element = $(".donate").length;
+            var attrLastId = $(".donate:last").attr('id');
+            lastId = attrLastId.replace("donate", "");
+            
+            var nextId = Number(lastId)+1;
+
+            var elems = '<div class="row donate" id="donate'+nextId+'"><div class="form-group col-sm-8"><input type="text" class="form-control" placeholder="ชื่อ-นามสกุล"></div><div class="form-group col-sm-3"><input type="text" class="form-control"></div><div class="form-group col-sm-1"><a href="#" class="remove" id="d' + nextId + '"><img src="../images/remove.png" width="20" style="margin-top: 5px;"></a></div></div>';
+            $('.donate:last').after(elems);
         });
-        $('#remove-donate').click(function(event) {
-            $('')
+
+        $('.container').on('click', '.remove', function() {
+            var id = this.id;
+            removeId = id.replace("d", "");
+            $('#donate' + removeId).remove();
+        });
+
+        $('.btn-warning').click(function(event) {
+            window.location.href = 'index.html';
+        });
+        $('.btn-primary').click(function(event) {
+            window.location.href = 'confirm.html';
         });
     });
 </script>

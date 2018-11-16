@@ -1,6 +1,7 @@
 .payment-form{
 	padding-bottom: 50px;
-	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Kanit', sans-serif;
 }
 
 .payment-form.dark{
@@ -67,7 +68,7 @@
 }
 
 .payment-form .products .item-name{
-	font-weight:600;
+	font-weight:300;
 	font-size: 0.9em;
 }
 
@@ -82,7 +83,7 @@
 
 .payment-form .products .price{
 	float: right;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 0.9em;
 }
 .payment-form .products .donate {
@@ -113,7 +114,7 @@
 }
 
 .payment-form .card-details label{
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 	margin-bottom: 15px;
 	color: #79818a;
@@ -136,6 +137,10 @@
 }
 .form-check-label {
 	margin-left: 20px;
+}
+
+input:placeholder {
+	color: red;
 }
 
 @media (min-width: 576px) {
