@@ -7,6 +7,7 @@ $boxes = [
     ['title' => '10kg', 'price' => '180', 'weight' => '10'],
     ['title' => '20kg', 'price' => '230', 'weight' => '20'],
 ];
+s($boxes);
 
 $weight = isset($_GET['weight']) ? $_GET['weight'] : 0; // kg.
 $priceCost = cost($boxes, $weight);
