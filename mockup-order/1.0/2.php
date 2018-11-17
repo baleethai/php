@@ -103,10 +103,10 @@
         });
 
         $('.back').click(function(event) {
-            window.location.href = '1.html';
+            window.location.href = '1.php';
         });
         $('.next').click(function(event) {
-            window.location.href = '3.html';
+            window.location.href = '3.php';
         });
     });
 </script>

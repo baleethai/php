@@ -215,7 +215,7 @@
         window.location.href = 'http://www.liangchiang.com/';
     });
     $('.next').click(function(event) {
-        window.location.href = '2.html';
+        window.location.href = '2.php';
     });
 
 </script>

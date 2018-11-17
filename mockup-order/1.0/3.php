@@ -154,10 +154,10 @@
 	});
 
 	$('.btn-warning').click(function(event) {
-			window.location.href = '2.html';
+			window.location.href = '2.php';
 	});
 	$('.btn-primary').click(function(event) {
-			window.location.href = '4.html';
+			window.location.href = '4.php';
 	});
 </script>
 </body>
