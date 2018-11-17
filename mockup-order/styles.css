@@ -80,12 +80,12 @@
 .payment-form .products .item p{
 	margin-bottom:0.2em;
 }
-
 .payment-form .products .price{
 	float: right;
 	font-weight: 400;
 	font-size: 0.9em;
 }
+
 .payment-form .products .donate {
 	float: right;
 	margin-right: 18px;
@@ -137,6 +137,9 @@
 }
 .form-check-label {
 	margin-left: 20px;
+}
+.form-check-label-confirm {
+	margin-left: 0px;
 }
 
 input:placeholder {

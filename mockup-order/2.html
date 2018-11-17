@@ -21,28 +21,25 @@
                 </div>
                 <form>
                     <div class="card-details">
-                        <h3 class="title">เลือกรูปแบบการจัดส่ง</h3>
+                        <h3 class="title">รายชื่อผู้ร่วมบริจาค</h3>
                         <div class="row donate" id="donate1">
                             <div class="form-group col-sm-12">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                  <label class="form-check-label" for="exampleRadios1">
-                                    Kerry  <span class="text-right">คิดค่าขนส่งเพิ่ม 100 บาท</span>
-                                  </label>
-
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                  <label class="form-check-label" for="exampleRadios2">
-                                    EMS ไปรษณีย์ไทย คิดค่าขนส่งเพิ่ม 100 บาท
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                  <label class="form-check-label" for="exampleRadios3">
-                                    ลูกค้ามารับเอง 
-                                  </label>
-                                </div>
+                                <label for="exampleFormControlFile1">อัพโหลดไฟล์ (PDF,Word,PNG,JPG)</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                          </div>
+                        </div>
+                        <h3 class="title">พิมพ์รายชื่อ</h3>
+                        <div class="row donate" id="donate1">
+                            <div class="form-group col-sm-8">
+                                <label for="card-number">ชื่อ-นามสกุล</label>
+                                <input type="text" class="form-control" placeholder="ชื่อ-นามสกุล">
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <label for="cvc">จำนวนเล่ม</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-1">
+                                <a href="#" class="add-donate"><img src="../images/30-512.png" width="20" style="margin-top: 45px;"></a>
                             </div>
                         </div>
                         <div class="row">
@@ -84,10 +81,10 @@
         });
 
         $('.btn-warning').click(function(event) {
-            window.location.href = 'index.html';
+            window.location.href = '1.html';
         });
         $('.btn-primary').click(function(event) {
-            window.location.href = 'confirm.html';
+            window.location.href = '3.html';
         });
     });
 </script>

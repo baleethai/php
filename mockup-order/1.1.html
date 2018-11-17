@@ -25,14 +25,15 @@
                         <div class="item">
                             <span class="price">978-616-268-185-1</span>
                             <p class="item-name">ISBN</p>
-                            <!-- <p class="item-description">Lorem ipsum dolor sit amet</p> -->
                         </div>
                         <div class="item">
-                            <span class="price" id="price-unit">฿28</span>
+                            <span class="qty">
+                                <input type="text" name="qty" id="qty" class="form-control" value="1">
+                            </span>
                             <p class="item-name">
                                 มนต์พิธี สำหรับภิกษุสามเณรและพุทธศาสนิกชนทั่วไป
                             </p>
-                            <p class="item-description">ขนาดกลาง 14.5 X 21 ซม.</p>
+                            <p class="item-description">ราคา 28.00 บาท/รายการ</p>
                         </div>
                         <div class="item">
                             <span class="donate">
@@ -42,14 +43,45 @@
                             <p class="item-description">รายชื่อผู้ร่วมบริจาคพิมพ์หนังสือ</p>
                         </div>
                         <div class="item">
-                            <span class="price" id="total">฿28</span>
-                            <p class="item-name">รวมเป็นเงิน</p>
+                            <span class="item-name">รวม</span>
+                            <span class="price" id="total">฿2,238.00</span>
                         </div>
-                        <div class="total">
-                            <span class="item-name">จำนวน</span>
+                        <div class="item text-left">
+                            <span class="item-name"><a href="#"><img src="../images/trash.png" alt="" width="20"> ลบรายการ</a></span>
+                            <span class="price"></span>
+                        </div>
+                        <hr>
+                        <div class="item">
+                            <span class="price">978-616-268-185-2</span>
+                            <p class="item-name">ISBN</p>
+                        </div>
+                        <div class="item">
                             <span class="qty">
                                 <input type="text" name="qty" id="qty" class="form-control" value="1">
                             </span>
+                            <p class="item-name">
+                                มนต์พิธี สำหรับภิกษุสามเณรและพุทธศาสนิกชนทั่วไป
+                            </p>
+                            <p class="item-description">ราคา 28.00 บาท/รายการ</p>
+                        </div>
+                        <div class="item">
+                            <span class="donate">
+                                <input type="checkbox" class="form-check-input" id="is_print" value="1">
+                            </span>
+                            <p class="item-name">ต้องการพิมพ์รายชื่อหรือไม่</p>
+                            <p class="item-description">รายชื่อผู้ร่วมบริจาคพิมพ์หนังสือ</p>
+                        </div>
+                        <div class="item">
+                            <span class="item-name">รวม</span>
+                            <span class="price" id="total">฿2,382.00</span>
+                        </div>
+                        <div class="item text-left">
+                            <span class="item-name"><a href="#"><img src="../images/trash.png" alt="" width="20"> ลบรายการ</a></span>
+                            <span class="price"></span>
+                        </div>
+                        <div class="total">
+                            <span class="item-name">รวมเป็นเงิน</span>
+                            <span class="price" id="total">฿13,900.00</span>
                         </div>
                     </div>
                     <div class="card-details">
@@ -140,5 +172,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript">
+    $('.btn-primary').click(function(event) {
+        window.location.href = '2.2.html';
+    });
+</script>
 </body>
 </html>
