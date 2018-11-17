@@ -73,14 +73,18 @@
 }
 
 .payment-form .products .item-description{
-	font-size:0.8em;
+	font-size:0.9em;
 	opacity:0.6;
+}
+
+.payment-form .products .item-description .price-unit {
+	color: #2a84ee;
 }
 
 .payment-form .products .item p{
 	margin-bottom:0.2em;
 }
-.payment-form .products .price{
+.payment-form .products .price {
 	float: right;
 	font-weight: 400;
 	font-size: 0.9em;
@@ -100,6 +104,12 @@
 
 .payment-form .products .total{
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 10px;
+	padding-top: 10px;
+	font-weight: 600;
+	line-height: 1;
+}
+.payment-form .products .total-item {
 	margin-top: 10px;
 	padding-top: 10px;
 	font-weight: 600;

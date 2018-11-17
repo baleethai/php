@@ -14,7 +14,6 @@
         <section class="payment-form dark">
             <div class="container">
                 <div class="block-heading">
-                    <!-- <h2>Payment</h2> -->
                     <div class="logo"><img src="../images/logoLiangChiang150w.png"></div>
                     <p>บริษัท สำนักพิมพ์เลี่ยงเชียง เพียรเพื่อพุทธศาสน์ จำกัด</p>
                     <p>105/95-96 ถนนประชาอุทิศ ซอย 45 แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140 โทร./แฟกซ์ 02-872-7667</p>
@@ -22,78 +21,82 @@
                 <form>
                     <div class="products">
                         <h3 class="title">ใบสั่งซื้อ</h3>
-                        <div class="item">
-                            <span class="price">978-616-268-185-1</span>
+                        <div class="item product1">
+                            <span class="price isbn">978-616-268-185-1</span>
                             <p class="item-name">ISBN</p>
                         </div>
-                        <div class="item">
+                        <div class="item product1">
                             <span class="qty">
-                                <input type="text" name="qty" id="qty" class="form-control" value="1">
+                                <input type="text" name="qty" id="qty" class="form-control" value="1" data-product-id="1">
                             </span>
                             <p class="item-name">
                                 มนต์พิธี สำหรับภิกษุสามเณรและพุทธศาสนิกชนทั่วไป
                             </p>
-                            <p class="item-description">ราคา 28.00 บาท/รายการ</p>
+                            <p class="item-description">ราคา <span class="price-unit">28.00</span> บาท/รายการ</p>
                         </div>
-                        <div class="item">
+                        <div class="item product1">
                             <span class="donate">
-                                <input type="checkbox" class="form-check-input" id="is_print" value="1">
+                                <input type="checkbox" class="form-check-input" class="is_print" value="1" data-product-id="1">
                             </span>
                             <p class="item-name">ต้องการพิมพ์รายชื่อหรือไม่</p>
                             <p class="item-description">รายชื่อผู้ร่วมบริจาคพิมพ์หนังสือ</p>
                         </div>
-                        <div class="item">
+                        <div class="item product1">
                             <span class="item-name">รวม</span>
-                            <span class="price" id="total">฿2,238.00</span>
+                            <span class="price" class="subtotal">฿2,238.00</span>
                         </div>
                         <div class="item text-left">
-                            <span class="item-name"><a href="#"><img src="../images/trash.png" alt="" width="20"> ลบรายการ</a></span>
+                            <span class="item-name">
+                                <a href="#" data-product-id="1" class="remove"><img src="../images/trash.png" alt="" width="20"> ลบรายการ</a>
+                            </span>
                             <span class="price"></span>
                         </div>
                         <hr>
-                        <div class="item">
-                            <span class="price">978-616-268-185-2</span>
+                        <div class="item product2">
+                            <span class="price isbn">978-616-268-185-2</span>
                             <p class="item-name">ISBN</p>
                         </div>
-                        <div class="item">
+                        <div class="item product2">
                             <span class="qty">
-                                <input type="text" name="qty" id="qty" class="form-control" value="1">
+                                <input type="text" name="qty" class="qty" class="form-control" value="1" data-product-id="2">
                             </span>
                             <p class="item-name">
                                 มนต์พิธี สำหรับภิกษุสามเณรและพุทธศาสนิกชนทั่วไป
                             </p>
-                            <p class="item-description">ราคา 28.00 บาท/รายการ</p>
+                            <p class="item-description">ราคา <span class="price-unit">28.00</span> บาท/รายการ</p>
                         </div>
-                        <div class="item">
+                        <div class="item product2">
                             <span class="donate">
-                                <input type="checkbox" class="form-check-input" id="is_print" value="1">
+                                <input type="checkbox" class="form-check-input" class="is_print" value="1">
                             </span>
                             <p class="item-name">ต้องการพิมพ์รายชื่อหรือไม่</p>
                             <p class="item-description">รายชื่อผู้ร่วมบริจาคพิมพ์หนังสือ</p>
                         </div>
-                        <div class="item">
+                        <div class="item product2">
                             <span class="item-name">รวม</span>
-                            <span class="price" id="total">฿2,382.00</span>
+                            <span class="price" class="subtotal">฿2,382.00</span>
                         </div>
                         <div class="item text-left">
-                            <span class="item-name"><a href="#"><img src="../images/trash.png" alt="" width="20"> ลบรายการ</a></span>
+                            <span class="item-name">
+                                <a href="#" class="remove" data-product-id="2"><img src="../images/trash.png" alt="" width="20"> ลบรายการ</a>
+                            </span>
                             <span class="price"></span>
                         </div>
                         <div class="total">
                             <span class="item-name">รวมเป็นเงิน</span>
-                            <span class="price" id="total">฿13,900.00</span>
+                            <span class="price" class="total">฿13,900.00</span>
                         </div>
                     </div>
                     <div class="card-details">
                         <h3 class="title">ข้อมูลลูกค้า</h3>
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label for="card-number">ชื่อ-นามสกุล</label>
-                                <input type="text" class="form-control" placeholder="ชื่อ-นามสกุล">
+                                <label for="info-name">ชื่อ-นามสกุล</label>
+                                <input type="text" class="form-control" placeholder="ชื่อ-นามสกุล" id="info-name">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="cvc">ไลน์ไอดี</label>
-                                <input type="text" class="form-control" placeholder="ไลน์ไอดี">
+                                <input type="text" class="form-control" placeholder="ไลน์ไอดี" id="info-lineid">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="card-holder">อีเมล์</label>

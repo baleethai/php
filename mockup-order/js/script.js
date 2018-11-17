@@ -63,5 +63,4 @@ $(function() {
     } else {
         $(".shipping-address").show();
     }
-
 });
