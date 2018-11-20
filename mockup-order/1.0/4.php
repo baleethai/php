@@ -174,7 +174,7 @@
         $("input").attr('disabled', true);
         $("textarea").attr('disabled', true);
         $(".btn-primary").click(function() {
-            window.location.href = '5.html';
+            window.location.href = '5.php';
         });
     });
 </script>
