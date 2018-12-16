@@ -6,6 +6,6 @@ $data = [
 	'age'  => 30
 ];
 
-setcookie('name', json_encode($data), time() + (86400 * 30), "/"); // 86400 = 1 day
+setcookie('data', json_encode($data), time() + (86400 * 30), "/"); // 86400 = 1 day
 
-s($_COOKIE['name']);
+s(json_decode($_COOKIE['data']));
