@@ -8,4 +8,4 @@ $data = [
 
 setcookie('data', json_encode($data), time() + (86400 * 30), "/"); // 86400 = 1 day
 
-s(json_decode($_COOKIE['data'], true));
+s($_COOKIE['data']);
