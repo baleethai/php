@@ -6,7 +6,7 @@ require_once('LineLoginLib.php');
 // กรณีต้องการตรวจสอบการแจ้ง error ให้เปิด 3 บรรทัดล่างนี้ให้ทำงาน กรณีไม่ ให้ comment ปิดไป
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// error_reporting(E_ALL);
  
 // กรณีมีการเชื่อมต่อกับฐานข้อมูล
 //require_once("dbconnect.php");
