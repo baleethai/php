@@ -3,16 +3,30 @@
 require 'vendor/autoload.php';
 
 $boxes = [
-	['title' => '3kg', 'price' => '160', 'weight' => '3', 'dimension' => '300'],
-    ['title' => '10kg', 'price' => '180', 'weight' => '10', 'dimension' => '1000'],
-    ['title' => '20kg', 'price' => '230', 'weight' => '20', 'dimension' => '2000'],
+	[
+        'title'     => '500 กรัม', 
+        'price'     => '160', 
+        'weight'    => '500', 
+        'dimension' => '500'
+    ],
+    [
+        'title'     => '1000 กรัม', 
+        'price'     => '180', 
+        'weight'    => '1000', 
+        'dimension' => '1000'
+    ],
+    [
+        'title'     => '2000 กรัม',
+        'price'     => '230', 
+        'weight'    => '2000', 
+        'dimension' => '2000'
+    ],
 ];
 
 s($boxes);
 
 $weight = isset($_GET['weight']) ? $_GET['weight'] : 0; // kg.
 $dimension = isset($_GET['dimension']) ? $_GET['dimension'] : 0; // cm.
-
 
 $priceCost = dimension($boxes, $dimension);
 
@@ -83,6 +97,7 @@ function dimension($boxes = array(), $dimension = 0)
     $listBox = array_filter($boxes, function($box) use($dimension) {
         return $box['dimension'] >= $dimension;
     });
+    s($listBox);
 
     if ($listBox) {
         $useBoxes = array();
@@ -103,15 +118,15 @@ function dimension($boxes = array(), $dimension = 0)
     }
 
     $box = end($boxes);
-    if (is_float($dimension/20)) {
-        // 20
+    if (is_float($dimension/2000)) {
+        // 2000
         $useBoxes[] = [
             'title'     => $box['title'],
-            'box'       => floor($dimension/20),
-            'price'     => $box['price'] * floor($dimension/20),
+            'box'       => floor($dimension/2000),
+            'price'     => $box['price'] * floor($dimension/2000),
             'dimension' => $box['dimension']
         ];
-        $leftBox = $dimension%20;
+        $leftBox = $dimension%2000;
         $listLeftBox = array_filter($boxes, function($box) use($leftBox) {
             return $box['dimension'] >= $leftBox;
         });
@@ -130,8 +145,8 @@ function dimension($boxes = array(), $dimension = 0)
     } else {
         $useBoxes[] = [
             'title'     => $box['title'],
-            'box'       => $weight/20,
-            'price'     => $box['price'] * $weight/20,
+            'box'       => $weight/2000,
+            'price'     => $box['price'] * $weight/2000,
             'dimension' => $box['dimension']
         ];
     }
