@@ -17,7 +17,7 @@ try {
     $tokens = $adapter->getAccessToken();
     $userProfile = $adapter->getUserProfile();
     // print_r( $tokens );
-    print_r( $userProfile );
+    var_dump( $userProfile );
     $adapter->disconnect();
 }
 catch (\Exception $e) {
