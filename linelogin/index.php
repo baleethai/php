@@ -1,5 +1,5 @@
 <?php
-include './vendor/autoload.php';
+include 'vendor/autoload.php';
 use Hybridauth\Hybridauth;
 use Hybridauth\HttpClient;
 $config = [
