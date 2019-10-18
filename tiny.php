@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>
+
+    tinymce.init({
+      selector: "textarea",  // change this value according to your HTML
+      plugins: "autosave",
+      toolbar: "restoredraft"
+    });
+
+
+  </script>
+</head>
+<body>
+  <textarea>Next, use our Get Started docs to setup Tiny!</textarea>
+</body>
+</html>

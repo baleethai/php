@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>jQuery UI AutoComplete : Overriding the Default Select Action</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/hot-sneaks/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+             <script>
+                $(document).ready(function() {
+                 var cCities = ["อุบลราชธานี", "กรุงเทพมหานคร", "อ่างทอง", "ราชบุรี", "สุรินทร์", "น่าน"];
+                        
+                    var zipCode = { อุบลราชธานี: 60290, กรุงเทพมหานคร: 90001, อ่างทอง: 600040, 
+                                                 ราชบุรี:02138 , สุรินทร์:00800 };
+                        
+                        $('#autoSuggest').autocomplete({
+                                source: cCities,
+                                select: function(event, ui) {
+                                        $('#zipCode').val(zipCode[ui.item.value]);
+                                }
+                        })
+
+                });
+        </script>   
+</head> 
+<body>
+ <form>     
+                <div class="ui-widget">
+                        <label for="autoSuggest">Name of Cities with C: </label><input id="autoSuggest"/><br><br>
+                        <label for="zipCode">Zip Code: </label><input id="zipCode"/>                      
+                </div>
+        </form>
+
+</body>
+</html>
