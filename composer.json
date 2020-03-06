@@ -1,6 +1,5 @@
 {
     "require": {
-        "nesbot/carbon": "^2.3",
         "dvdoug/boxpacker": "^3.1",
         "google/apiclient": "^2.0",
         "asimlqt/php-google-spreadsheet-client": "3.0.*",
@@ -11,7 +10,8 @@
         "symfony/dom-crawler": "^4.3",
         "emanueleminotto/simple-html-dom": "^1.5",
         "symfony/css-selector": "^4.3",
-        "aliyuncs/oss-sdk-php": "^2.3"
+        "aliyuncs/oss-sdk-php": "^2.3",
+        "nesbot/carbon": "^2.30"
     },
     "require-dev": {
         "kint-php/kint": "^3.0"
