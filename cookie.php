@@ -2,7 +2,7 @@
 <?php
 	$cookie_name = "Tum";
 	$cookie_value = "Wevo";
-	setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/", "https://php.spacetum.co", true); // 86400 = 1 day
+	setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
 ?>
 <html>
 
