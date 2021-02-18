@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- saved from url=(0113)https://app.tamto.online/invoice/preview/eyAiaWQiOiAiNzE5NDcwIiwgInNlY3JldCI6ICJzcGFjZXR1bWNvQGdtYWlsLmNvbSJ9/1/0 -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./pdf/pdf.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: 'Sarabun', sans-serif;
+            }
+
+            * {
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+
+            .page {
+                width: 210mm;
+                min-height: 297mm;
+                padding: 20mm;
+                margin: 10mm auto;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                font-family: 'Sarabun', sans-serif;
+            }
+
+            .subpage {
+                padding: 1cm;
+                height: 257mm;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            @media print {
+                html, body {
+                    width: 210mm;
+                    height: 297mm;
+                }
+
+                .page {
+                    margin: 0;
+                    border: initial;
+                    border-radius: initial;
+                    width: initial;
+                    min-height: initial;
+                    box-shadow: initial;
+                    background: initial;
+                    page-break-after: always;
+                }
+            }
+
+
+            .tableMain {
+                width: 100%;
+                /* margin-top: 0.6cm; */
+            }
+
+            .tableMain td {
+                padding-left: 1%;
+                padding-right: 1%;
+            }
+
+            .orderTable th {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .orderTable {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            .orderTable td,
+                .orderTable th {
+                    border: 1px solid #000;
+                    padding: 4px;
+            }
+
+            .orderTable td {
+                text-align: right;
+            }
+
+            .totalTable {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            .totalTable td,
+                .totalTable th {
+                    border-bottom: 1px solid #000;
+                    padding-left: 4px;
+                    padding-right: 4px;
+                    padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .totalTable td {
+            text-align: right;
+        }
+
+        .checkbox {
+            width: 100%;
+            padding-left: 4px;
+        }
+
+        p {
+            font-weight: 200;
+            margin-bottom: 1px;
+        }
+
+        .info-com {
+            display: block;
+            width: 100%;
+        }
+
+        .info-box-img {
+            float: left;
+        }
+
+        .name-company {
+            font-size: 18px;
+        }
+
+        .other-remark th {
+            text-align: left;
+            border: none;
+        }
+
+        .other-remark td {
+            border: none;
+        }
+
+        .logo {
+            margin-top: 2px;
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+
+        .title-color {
+            color: #000000
+        }
+</style>
+    </head>
+<body>
+
+<div class="book">
+    <div class="page">
+        <div class="subpage">
+            <div class="body-print">
+                <table class="tableMain">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="info-com">
+                                    <div class="text-right" style="float: right;">
+                                        <strong class="title-color">ใบแจ้งหนี้</strong><br>
+                                        <span>ตัวอย่าง</span><br> 
+
+                                        </div> <span class="info-box-img"><img src="./pdf/tro-logo.png" class="logo"></span>
+                                    <div>
+                                        <div class="info-box-text name-company">ตรอ.ทีที </div>
+                                        <div class="info-box-text"><i class="fa fa-home"></i> 160 หมู่ 14 ไร่ใต้ พิบูลมังสาหาร
+                                            อุบลราชธานี 34110</div>
+                                        <div class="info-box-text"><i class="far fa-clock"></i> 8.00 - 17.00 น. (จ-ส)</div>
+                                        <div class="info-box-text"><i class="fa fa-phone"></i> 06-1840-8008</div>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top: 3px; padding-bottom: 3px;">
+                                    <div class="col-8" style="padding-right: 0px; padding-left: 10px;">
+                                        <p>ลูกค้า: คุณ มณีวรรณ ทองก้อนประเสริฐ </p>
+                                        <p>ที่อยู่: 120 ชำราก เมืองตราด ตราด 23000</p>
+                                        <p>โทร. 08-8123-1231</p>
+                                        <p>ทะเบียน: 9นน-3203 กท </p>
+                                    </div>
+                                    <div class="col-4" style="padding-right: 10px; padding-left: 0px;">
+                                        <p>เลขที่: IV-631200001</p>
+                                        <p>วันที่: 1 ธันวาคม 2563</p>
+                                        <p>อ้างอิง: -</p>
+                                        <p>ประเภท: รย.1 (10/10/2018)</p>
+                                    </div>
+                                </div>
+                                <table class="orderTable">
+                                    <thead>
+                                        <tr>
+                                            <th width="5%" style="text-align: center;">ลำดับ</th>
+                                            <th width="50%" style="text-align: center;">รายการ</th>
+                                            <th width="15%" style="text-align: center;">จำนวนเงิน</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: center; vertical-align: top;">1</td>
+                                            <td style="text-align: left; vertical-align: top;"> ตรวจสภาพ
+
+                                                <span></span></td>
+                                            <td style="vertical-align: top;">200.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center; vertical-align: top;">2</td>
+                                            <td style="text-align: left; vertical-align: top;"> พ.ร.บ.
+                                                (วิริยะประกันภัย)
+                                                <div></div>
+                                            </td>
+                                            <td style="vertical-align: top;">645.21</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center; vertical-align: top;">3</td>
+                                            <td style="text-align: left; vertical-align: top;"> ภาษีประจำปี
+
+                                                <div></div>
+                                            </td>
+                                            <td style="vertical-align: top;">598.50</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center; vertical-align: top;">4</td>
+                                            <td style="text-align: left; vertical-align: top;"> ค่าปรับภาษี
+
+                                                <div></div>
+                                            </td>
+                                            <td style="vertical-align: top;">11.97</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center; vertical-align: top;">5</td>
+                                            <td style="text-align: left; vertical-align: top;"> บริการต่อภาษี
+                                                (เล่ม)
+                                                <div></div>
+                                            </td>
+                                            <td style="vertical-align: top;">200.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center; vertical-align: top;">6</td>
+                                            <td style="text-align: left; vertical-align: top;"> บริการออก พ.ร.บ.
+
+                                                <div></div>
+                                            </td>
+                                            <td style="vertical-align: top;">100.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center; vertical-align: top;">7</td>
+                                            <td style="text-align: left; vertical-align: top;"> ขนส่ง
+
+                                                <div>
+                                                    <table class="other-remark">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Kerry</th>
+                                                                <td>50.00</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                            <td style="vertical-align: top;">50.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="totalTable">
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="2" style="text-align: left;">ยอดรวม</th>
+                                            <td>1,805.68</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2" style="text-align: left;">ส่วนลด</th>
+                                            <td>100.68</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2" style="text-align: left; border-bottom: 3px double rgb(0, 0, 0);">
+                                                ยอดสุทธิ</th>
+                                            <td style="border-bottom: 3px double rgb(0, 0, 0);">1,705.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="row" style="padding-top: 10px; padding-right: 0px; padding-left: 0px;">
+                                    <div class="col-8" style="padding-right: 0px; padding-left: 4px;">
+                                        <p style="margin-top: 5px; margin-bottom: 5px; padding-left: 4px;">พนักงาน : ทินกร ปัดถา</p>
+                                        <p style="margin-top: 5px; margin-bottom: 5px; padding-left: 4px;">หมายเหตุ : demo</p>
+                                    </div>
+                                    <div class="col-4 text-center" style="padding-right: 0px; padding-left: 0px;">
+                                        <p>ผู้วางบิล</p> <br>
+                                        <p>______________</p>
+                                        <p>(ทินกร ปัดถา)</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
