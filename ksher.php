@@ -1,3 +1,1 @@
-<?php
-header("Location: https://google.com");
-die();
+<h1>Pay</h1>
