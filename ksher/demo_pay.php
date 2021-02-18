@@ -1,5 +1,7 @@
 <?php
+
 include_once 'ksher_pay_sdk.php';
+
 $appid='mch20027';
 $privatekey=<<<EOD
 -----BEGIN RSA PRIVATE KEY-----
@@ -23,7 +25,7 @@ if($action == 'native_pay'){
 		"total_fee" => round($_POST['local_total_fee'], 2)*100,
 		"fee_type" => $_POST['fee_type'],
 		"channel" => 'wechat',
-		"notify_url" => 'http://'.$_SERVER['HTTP_HOST']."/test/demo/demo_notify.php", //回调地址
+		"notify_url" => 'http://'.$_SERVER['HTTP_HOST']."/ksher/demo_notify.php", //回调地址
 		);
 	$native_pay_response = $class->native_pay($native_pay_data);
 	$native_pay_array = json_decode($native_pay_response, true);
@@ -67,7 +69,7 @@ if($action == 'native_pay'){
 	$native_pay_data = array(
 		"mch_order_no" => $_POST['mch_order_no'],    // 80000001
 		"total_fee" => round($_POST['total_fee'], 2)*100,   //100    //$_POST['total_fee'] 
-		"fee_type" => 'JPY',
+		"fee_type" => 'THB',
 		"auth_code" => $_POST['auth_code'],  //'111111111'
 		"device_id" => $_POST['device_id'],  //'pos_00001'
 		);

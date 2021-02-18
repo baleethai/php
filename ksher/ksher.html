@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+<body>
+<form action="http://gateway.ksher.com/pc" name="pay" method="post" enctype="multipart/form-data" target="_blank" id="form">
+<input type="hidden" name="appid" value="mch28321">
+<input type="hidden" name="mch_order_no" value="233114471">
+<input type="hidden" name="mch_code" value="233114471">
+<input type="hidden" name="total_fee" value="50000">
+<input type="hidden" name="fee_type" value="THB">
+<input type="hidden" name="nonce_str" value="8d22a1335bc893fe6e90a236a93ca3c5">
+<input type="hidden" name="channel_list" value="wechat,alipay,linepay,bbl_promptpay,truemoney,ktbcard">
+<input type="hidden" name="mch_redirect_url" value="https://php.spacetum.co/ksher/callback.php">
+<input type="hidden" name="mch_redirect_url_fail" value="https://php.spacetum.co/ksher/fail.php">
+<input type="hidden" name="product_name" value="sdd">
+<input type="hidden" name="refer_url" value="https://php.spacetum.co">
+<input type="hidden" name="shop_name" value="ABC Store">
+<input type="hidden" name="color" value="red">
+<input type="hidden" name="background" value="">
+<input type="hidden" name="payment_color" value="">
+<input type="hidden" name="ksher_explain" value="">
+<input type="hidden" name="hide_explain" value="">
+<input type="hidden" name="logo" value="">
+<input type="hidden" name="lang" value="">
+<input type="hidden" name="expire_time" value="30">
+<input type="hidden" name="hide_exp_time" value ="1" >
+<input type="hidden" name="time_stamp" value ="2020041414150505S" >
+<input type="hidden" name="sign" value="5f01d9fe632bcf7d07deedcd3b419d37c653c571e7ea8759ad8cd4e44594b73776ab23720a7238e1a4442fb13e63d7a4b0e80695eedf50bd65d7c8e4a80c6d21">
+<input type="submit" value="Checkout" name="submit" class="submit" onclick='go_pay()' >
+</form>
+</div>
+<script>
+function go_pay(){
+    $('#form').submit();
+}
+</script>
+</body>
+</html>

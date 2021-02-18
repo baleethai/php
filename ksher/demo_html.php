@@ -60,6 +60,7 @@
         <div class="group">
             <label>&nbsp;</label>
 			<input type='hidden' name='action' value='quick_pay' />
+            <input type='hidden' name='channel' value='wechat' />
             <div><input type="submit" value="submit"/> </div>
         </div>
     </form>
