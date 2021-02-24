@@ -40,7 +40,7 @@
             OmiseCard.open({
                 amount: 12345,
                 currency: "THB",
-                defaultPaymentMethod: "credit_card",
+                defaultPaymentMethod: "internet_banking_scb",
                 onCreateTokenSuccess: (nonce) => {
                     if (nonce.startsWith("tokn_")) {
                         form.omiseToken.value = nonce;
