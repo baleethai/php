@@ -13,7 +13,8 @@
         "aliyuncs/oss-sdk-php": "^2.3",
         "nesbot/carbon": "^2.30",
         "vimeo/vimeo-api": "^3.0",
-        "aws/aws-sdk-php": "^3.150"
+        "aws/aws-sdk-php": "^3.150",
+        "omise/omise-php": "dev-master"
     },
     "require-dev": {
         "kint-php/kint": "^3.0"
